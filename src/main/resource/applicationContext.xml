@@ -58,6 +58,8 @@
     <tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true"/>
     <!-- 扫描com.pwx.dao.Impl包下所有使用注解的类型 -->
     <context:component-scan base-package="com.pwx.dao.Impl"/>
+    <!-- 扫描com.pwx.service.Impl包下所有使用注解的类型 -->
+    <context:component-scan base-package="com.pwx.service.Impl"/>
 
     <!--若使用myBatis，使用以下配置 -->
     <!--

@@ -18,27 +18,31 @@ public interface BookDao
     public List<Book> findAllBooks();
 
     /**
-     * 通过书籍ID查找
-     * @param BookId BookId
+     * 通过ID查找
+     * @param id bookId
      * @return book
      */
-    public Book findBookById(String BookId);
+    public Book findBookById(String id);
 
     /**
      * 插入书籍
      * @param book book
+     * @return boolean
      */
-    public void saveBook(Book book);
+    public boolean saveBook(Book book);
 
     /**
      * 删除书籍
-     * @param BookId bookId
+     * @param id id
+     * @return boolean
      */
-    public void deleteBook(String BookId);
+    public boolean deleteBook(String id);
 
     /**
      * 修改书籍
      * @param book book
+     * @param id id
+     * @return boolean
      */
-    public void updateBook(Book book);
+    public boolean updateBook(Book book, String id);
 }
